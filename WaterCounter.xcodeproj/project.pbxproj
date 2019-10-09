@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		015BF4AD234E47CB00ECA70D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BF4AC234E47CB00ECA70D /* AppDelegate.swift */; };
-		015BF4AF234E47CB00ECA70D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BF4AE234E47CB00ECA70D /* SceneDelegate.swift */; };
 		015BF4B1234E47CB00ECA70D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BF4B0234E47CB00ECA70D /* ViewController.swift */; };
 		015BF4B4234E47CB00ECA70D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B2234E47CB00ECA70D /* Main.storyboard */; };
 		015BF4B6234E47CE00ECA70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B5234E47CE00ECA70D /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		015BF4A9234E47CB00ECA70D /* WaterCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015BF4AC234E47CB00ECA70D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		015BF4AE234E47CB00ECA70D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		015BF4B0234E47CB00ECA70D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		015BF4B3234E47CB00ECA70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		015BF4B5234E47CE00ECA70D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				015BF4AC234E47CB00ECA70D /* AppDelegate.swift */,
-				015BF4AE234E47CB00ECA70D /* SceneDelegate.swift */,
 				015BF4B0234E47CB00ECA70D /* ViewController.swift */,
 				015BF4B2234E47CB00ECA70D /* Main.storyboard */,
 				015BF4B5234E47CE00ECA70D /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				015BF4B1234E47CB00ECA70D /* ViewController.swift in Sources */,
 				015BF4AD234E47CB00ECA70D /* AppDelegate.swift in Sources */,
-				015BF4AF234E47CB00ECA70D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6A58A43EM;
 				INFOPLIST_FILE = WaterCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.iamai.WaterCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6A58A43EM;
 				INFOPLIST_FILE = WaterCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.iamai.WaterCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
