@@ -12,6 +12,8 @@
 		015BF4B4234E47CB00ECA70D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B2234E47CB00ECA70D /* Main.storyboard */; };
 		015BF4B6234E47CE00ECA70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B5234E47CE00ECA70D /* Assets.xcassets */; };
 		015BF4B9234E47CE00ECA70D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B7234E47CE00ECA70D /* LaunchScreen.storyboard */; };
+		015BF4C1234E55D200ECA70D /* WaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BF4C0234E55D200ECA70D /* WaterData.swift */; };
+		01B89F0B234FA4FD0010A628 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F0A234FA4FD0010A628 /* FileReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		015BF4B5234E47CE00ECA70D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015BF4B8234E47CE00ECA70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		015BF4BA234E47CE00ECA70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015BF4C0234E55D200ECA70D /* WaterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterData.swift; sourceTree = "<group>"; };
+		01B89F0A234FA4FD0010A628 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				015BF4B5234E47CE00ECA70D /* Assets.xcassets */,
 				015BF4B7234E47CE00ECA70D /* LaunchScreen.storyboard */,
 				015BF4BA234E47CE00ECA70D /* Info.plist */,
+				015BF4C0234E55D200ECA70D /* WaterData.swift */,
+				01B89F0A234FA4FD0010A628 /* FileReader.swift */,
 			);
 			path = WaterCounter;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015BF4C1234E55D200ECA70D /* WaterData.swift in Sources */,
 				015BF4B1234E47CB00ECA70D /* ViewController.swift in Sources */,
+				01B89F0B234FA4FD0010A628 /* FileReader.swift in Sources */,
 				015BF4AD234E47CB00ECA70D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
