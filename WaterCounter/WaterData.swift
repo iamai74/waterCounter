@@ -9,6 +9,6 @@
 import Foundation
 
 struct WaterData: Codable {
-    let dateTime: Date = Date()
+    var dateTime: Date = Date()
     let value: Float
 }

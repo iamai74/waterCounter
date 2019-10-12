@@ -14,6 +14,7 @@
 		015BF4B9234E47CE00ECA70D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015BF4B7234E47CE00ECA70D /* LaunchScreen.storyboard */; };
 		015BF4C1234E55D200ECA70D /* WaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BF4C0234E55D200ECA70D /* WaterData.swift */; };
 		01B89F0B234FA4FD0010A628 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F0A234FA4FD0010A628 /* FileReader.swift */; };
+		01B89F0D235201A60010A628 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B89F0C235201A60010A628 /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		015BF4BA234E47CE00ECA70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015BF4C0234E55D200ECA70D /* WaterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterData.swift; sourceTree = "<group>"; };
 		01B89F0A234FA4FD0010A628 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		01B89F0C235201A60010A628 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		01B89F0E235210A60010A628 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		015BF4A0234E47CB00ECA70D = {
 			isa = PBXGroup;
 			children = (
+				01B89F0E235210A60010A628 /* README.md */,
 				015BF4AB234E47CB00ECA70D /* WaterCounter */,
 				015BF4AA234E47CB00ECA70D /* Products */,
 			);
@@ -66,6 +70,7 @@
 				015BF4BA234E47CE00ECA70D /* Info.plist */,
 				015BF4C0234E55D200ECA70D /* WaterData.swift */,
 				01B89F0A234FA4FD0010A628 /* FileReader.swift */,
+				01B89F0C235201A60010A628 /* HistoryTableViewController.swift */,
 			);
 			path = WaterCounter;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				015BF4B1234E47CB00ECA70D /* ViewController.swift in Sources */,
 				01B89F0B234FA4FD0010A628 /* FileReader.swift in Sources */,
 				015BF4AD234E47CB00ECA70D /* AppDelegate.swift in Sources */,
+				01B89F0D235201A60010A628 /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

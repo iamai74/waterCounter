@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fIb-7F-AMk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,7 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="1eS-Gc-uq7">
+            <objects>
+                <navigationController id="fIb-7F-AMk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lQC-1W-8zL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7eK-xU-1Y9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhE-sN-z1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-843" y="-17"/>
+        </scene>
+        <!--Water Counter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaterCounter" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +52,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkN-x0-oXa">
+                                <rect key="frame" x="331" y="121" width="50" height="30"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <segue destination="Yoe-Xr-ioL" kind="show" id="5Mh-3G-Phc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -43,18 +66,54 @@
                             <constraint firstItem="sxo-mp-BF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7VX-Vw-rfZ"/>
                             <constraint firstItem="sxo-mp-BF4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="85J-Mz-5es"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mV8-In-AL3" secondAttribute="bottom" constant="40" id="9xR-Ge-PGb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YkN-x0-oXa" secondAttribute="trailing" id="EQq-GF-2aO"/>
                             <constraint firstItem="mV8-In-AL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FCP-Y8-Rxr"/>
+                            <constraint firstItem="kYQ-hK-1rA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mV8-In-AL3" secondAttribute="trailing" constant="8" symbolic="YES" id="Rct-ir-401"/>
+                            <constraint firstItem="YkN-x0-oXa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="mYv-gp-jf5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kYQ-hK-1rA" secondAttribute="bottom" constant="40" id="pFC-0F-mIv"/>
+                            <constraint firstItem="YkN-x0-oXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="331" id="r53-S0-gX7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Water Counter" id="t48-Vd-B5A">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fbd-CU-kKt"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="counterLabel" destination="sxo-mp-BF4" id="e2q-Ab-lFC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+            <point key="canvasLocation" x="114" y="-17"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Thq-Zb-pRt">
+            <objects>
+                <tableViewController id="Yoe-Xr-ioL" customClass="HistoryTableViewController" customModule="WaterCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0OQ-9e-19N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="5TO-2u-tqW">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5TO-2u-tqW" id="DU2-20-tpn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yoe-Xr-ioL" id="30r-sK-e7I"/>
+                            <outlet property="delegate" destination="Yoe-Xr-ioL" id="4BI-R4-iI7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="History" id="0js-OF-dj0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joG-gL-MyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-17"/>
         </scene>
     </scenes>
 </document>
